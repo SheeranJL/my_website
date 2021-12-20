@@ -1,0 +1,25 @@
+.header-container {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 7% 5% 0% 5%;
+
+
+  .initials {
+    margin-right: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    align-self: center;
+    text-decoration: none;
+  }
+
+  .header-item {
+    margin: 5px;
+    color: white;
+    font-size: 20px;
+    margin-right: 4%;
+    text-decoration: none;
+  }
+}

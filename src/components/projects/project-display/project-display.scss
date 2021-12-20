@@ -1,0 +1,17 @@
+.project-item {
+  color: white;
+  display: flex;
+  border: 1px solid white;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: blue;
+  height: 50%;
+  padding: 0;
+  justify-content: center;
+  margin-top: 10%;
+
+  .project-title {
+    text-align: left;
+    align-self: center;
+  }
+}

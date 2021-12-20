@@ -1,0 +1,30 @@
+.profile-container {
+  display: flex;
+  margin: 10% 8%;
+
+  .profile-blurb {
+    color: white;
+    align-self: center;
+    margin-right: 8%;
+  }
+
+  .picture-container {
+
+    img {
+      max-width: 300px;
+      max-height: 300px;
+    }
+  }
+
+  .line {
+    background-color: blue;
+    width: 50px;
+    margin-right: 10px;
+  }
+
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
