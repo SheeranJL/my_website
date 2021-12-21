@@ -1,6 +1,6 @@
 .profile-container {
   display: flex;
-  margin: 10% 8%;
+  margin: 5% 8% 2% 8%;
 
   .profile-blurb {
     color: white;
@@ -22,6 +22,12 @@
     margin-right: 10px;
   }
 
+}
+
+.bottom-blurb {
+  margin-top: 4%;
+  color: white;
+  text-align: center;
 }
 
 .logo {

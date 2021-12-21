@@ -1,0 +1,25 @@
+.skills-page-container {
+  display: flex;
+  flex-direction: column;
+  margin: 7% 8% 0% 8%;
+  height: 60vh;
+
+  .skills-page-blurb {
+    color: white;
+    font-size: 24px;
+  }
+
+  .logo-container {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .logo {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+
+}

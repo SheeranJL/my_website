@@ -1,7 +1,7 @@
 import React from 'react';
 import './picture-and-blurb.scss';
 import Me from '../../../myself.jpg';
-import ReactLogo from '../../../react-logo.svg';
+
 
 const PictureAndBlurb = () => {
 
@@ -12,7 +12,8 @@ const PictureAndBlurb = () => {
 
       <div className='profile-blurb'>
         <h2>Hi there, my name is Lewis. I'm an aspiring web-developer.</h2>
-        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <p>Obsessed with the way in which websites and applications can be built to help people and businesses do their best work.</p>
+        <p>What started initially as a hobby has transformed into a deep passion for creating high quality, easy to use and assessible web applications.</p>
       </div>
 
 

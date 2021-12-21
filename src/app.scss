@@ -4,4 +4,10 @@
   height: 87vh;
   border-radius: 3%;
   background-color: black;
+
+  .modal-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1%;
+  }
 }

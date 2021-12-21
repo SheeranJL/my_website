@@ -12,6 +12,13 @@ const Profile = () => {
     <div>
       <PictureAndBlurb />
       <Socials />
+
+      <div className='bottom-blurb'>
+        <h3>I look forward to helping you on your next project</h3>
+        <h4>Get in touch!</h4>
+        <p>Email etc here</p>
+      </div>
+
     </div>
 
   )
