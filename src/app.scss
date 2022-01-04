@@ -1,13 +1,31 @@
 .app-container {
-  margin: 5% 15%;
+  margin: 0 15%;
   border: 1px solid black;
-  height: 87vh;
+  height: auto;
   border-radius: 3%;
   background-color: black;
+  margin-top: 5%;
 
   .modal-container {
     display: flex;
     justify-content: flex-end;
     margin-right: 1%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .app-container {
+    margin: 0;
+    border: 1px solid black;
+    height: 100vh;
+    border-radius: 0;
+    background-color: black;
+
+
+    .modal-container {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 1%;
+    }
   }
 }

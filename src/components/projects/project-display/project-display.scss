@@ -1,17 +1,50 @@
-.project-item {
-  color: white;
+.each-project-container {
   display: flex;
-  border: 1px solid white;
-  margin-left: 10%;
-  margin-right: 10%;
-  background-color: blue;
-  height: 50%;
-  padding: 0;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 10%;
+  align-items: center;
+  margin-left: 10%;
+  height: 350px;
+  margin-right: 10%;
+  margin-top: 20px;
+  margin-bottom: 40px;
 
-  .project-title {
-    text-align: left;
-    align-self: center;
+
+
+  .upper-container {
+    display: flex;
+    outline: 3px solid rgba(3, 12, 50, 1);
+    width: 100%;
+    height: 70%;
+    margin-bottom: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    .project-title {
+      color: green;
+      font-weight: bold;
+      font-size: 30px;
+      text-decoration: none;
+    }
   }
+
+  .lower-container {
+    display: flex;
+    background-color: rgba(3, 12, 50, 0.8);
+    outline: 3px solid rgba(3, 12, 50, 1);
+    width: 100%;
+    height: 30%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    p {
+      color: white;
+      font-size: 20px;
+    }
+  }
+
+
+
 }

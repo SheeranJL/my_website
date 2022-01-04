@@ -1,36 +1,31 @@
-.profile-container {
-  display: flex;
-  margin: 5% 8% 2% 8%;
+.main-profile-div {
 
-  .profile-blurb {
+  .bottom-blurb {
+    margin-top: 4%;
     color: white;
-    align-self: center;
-    margin-right: 8%;
+    text-align: center;
   }
 
-  .picture-container {
-
-    img {
-      max-width: 300px;
-      max-height: 300px;
-    }
+  .logo {
+    width: 100px;
+    height: 100px;
   }
 
-  .line {
-    background-color: blue;
-    width: 50px;
-    margin-right: 10px;
+  .contact-info {
+    color: yellow;
+    font-size: 16px;
+    font-weight: bold;
   }
-
 }
 
-.bottom-blurb {
-  margin-top: 4%;
-  color: white;
-  text-align: center;
-}
+@media screen and (max-width: 1330px) {
+  .main-profile-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-.logo {
-  width: 100px;
-  height: 100px;
+  .skills-section {
+    margin-top: 10%;
+  }
 }

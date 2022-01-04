@@ -7,12 +7,19 @@
   .project-page-blurb {
     color: white;
     text-align: center;
+
+    h2 {
+      color: yellow;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
   }
 
   .project-item-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 90%;
     width: 100%;
   }
 

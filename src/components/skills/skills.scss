@@ -1,12 +1,13 @@
 .skills-page-container {
   display: flex;
   flex-direction: column;
-  margin: 7% 8% 0% 8%;
-  height: 60vh;
+  margin: 5% 10% 5% 10%;
 
   .skills-page-blurb {
     color: white;
     font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
   }
 
   .logo-container {
@@ -22,4 +23,31 @@
   }
 
 
+}
+
+@media screen and (max-width: 1330px) {
+  .skills-page-container {
+    display: flex;
+    flex-direction: column;
+
+    .skills-page-blurb {
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .logo-container {
+      margin-top: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .logo {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+  }
 }
