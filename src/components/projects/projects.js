@@ -9,37 +9,37 @@ const Projects = () => {
     {
         title: 'NSW Covid Testing Map',
         link: 'https://sheeranjl.github.io/maps-covid-info/',
-        image: '/covid-testing.png',
+        image: 'https://i.ibb.co/x8bHWq4/covid-testing.png',
         description: "This application helps you find a covid testing clinic on any day of the week."
     },
     {
         title: 'E-Commerse Store',
         link: 'https://sheeranjl.github.io/ecommerce-store/',
-        image: "/ecom-store.png",
+        image: "https://i.ibb.co/YDXV2S5/ecom-store.png",
         description: "Mock design and functionallity of an e-commerce store."
     },
     {
         title: 'Task Tracking Application',
         link: 'https://sheeranjl.github.io/task-tracker-app/',
-        image: "/to-do-app.png",
+        image: "https://i.ibb.co/1vszbrG/to-do-app.png",
         description: "Create an account and track your to-do's and tasks."
     },
     {
         title: 'Gif Searching App',
         link: 'https://sheeranjl.github.io/project-gif-search/',
-        image: "/gif-search-app.png",
+        image: "https://i.ibb.co/4ffHB4s/gif-search-app.png",
         description: "Explore the vast ocean of gifs! Search and save gifs as you please."
     },
     {
         title: 'Nutrition Tracking App',
         link: 'https://sheeranjl.github.io/Nutrition_tracker_app/',
-        image: "/nutrition-app.png",
+        image: "https://i.ibb.co/kQGjdSp/nutrition-app.png",
         description: "Track your calorie intake among many thousands of different food options."
     },
     {
         title: 'Word Guessing Game',
         link: 'https://sheeranjl.github.io/word-guessing-game/',
-        image: "/word-guessing-game.png",
+        image: "https://i.ibb.co/pzLcrzJ/word-guessing-game.png",
         description: "A simple phrase guessing game."
     }
   ]
