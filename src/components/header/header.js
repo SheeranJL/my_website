@@ -4,13 +4,7 @@ import './header.scss';
 
 const Header = ({toggle}) => {
 
-  const history = useHistory();
   const location = useLocation();
-  const params = useParams();
-
-  console.log(location)
-
-
 
   return (
     <ul className='header-container'>
