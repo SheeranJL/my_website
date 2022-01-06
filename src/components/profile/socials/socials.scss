@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   list-style: none;
-  margin: 5% 0 0% 0%;
+  margin: 3% 0 0% 0%;
   margin-right: auto;
   width: 50%;
   padding-left: 0;
@@ -29,22 +29,22 @@
 
   .socials-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: row;
+    margin-right: auto;
     list-style: none;
     padding-left: 0;
     width: 100%;
-    align-items: center;
+    align-items: flex-start;
     padding-right: 0;
 
 
     .header-item {
       color: white;
-      text-align: center;
+      text-align: left;
       list-style: none;
-      margin: auto;
       padding-right: 0;
-      width: 33%;
+      padding-right: 10%;
       margin-bottom: 10px;
 
 

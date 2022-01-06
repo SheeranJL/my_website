@@ -7,21 +7,22 @@ const Projects = () => {
 
   const projectPlacements = [
     {
-        title: 'Word Guessing Game',
-        link: 'https://sheeranjl.github.io/word-guessing-game/',
-        image: "/word-guessing-game.png",
-        description: "You have only 60 seconds and three lives to guess the phrase correctly. Will you succeed?"
-    },
-    {
-        title: 'Nutrition Tracking App',
-        link: 'https://sheeranjl.github.io/Nutrition_tracker_app/',
-        image: "/nutrition-app.png",
-        description: "Track your calorie intake among many thousands of different food options."
+        title: 'NSW Covid Testing Map',
+        link: 'https://sheeranjl.github.io/maps-covid-info/',
+        image: '/covid-testing.png',
+        description: "This application helps you find a covid testing clinic on any day of the week."
     },
     {
         title: 'E-Commerse Store',
-        link: 'https://github.com/SheeranJL?tab=repositories',
-        description: "Mock design and functionallity of an e-commerce store"
+        link: 'https://sheeranjl.github.io/ecommerce-store/',
+        image: "/ecom-store.png",
+        description: "Mock design and functionallity of an e-commerce store."
+    },
+    {
+        title: 'Task Tracking Application',
+        link: 'https://sheeranjl.github.io/task-tracker-app/',
+        image: "/to-do-app.png",
+        description: "Create an account and track your to-do's and tasks."
     },
     {
         title: 'Gif Searching App',
@@ -30,14 +31,16 @@ const Projects = () => {
         description: "Explore the vast ocean of gifs! Search and save gifs as you please."
     },
     {
-        title: 'Task tracking application',
-        link: 'https://sheeranjl.github.io/task-tracker-app/',
-        image: "/to-do-app.png",
-        description: "Track the tasks you don't want to forget about using this little application! Log in to save them against your profile."
+        title: 'Nutrition Tracking App',
+        link: 'https://sheeranjl.github.io/Nutrition_tracker_app/',
+        image: "/nutrition-app.png",
+        description: "Track your calorie intake among many thousands of different food options."
     },
     {
-        title: 'TBA',
-        link: 'https://github.com/SheeranJL?tab=repositories'
+        title: 'Word Guessing Game',
+        link: 'https://sheeranjl.github.io/word-guessing-game/',
+        image: "/word-guessing-game.png",
+        description: "A simple phrase guessing game."
     }
   ]
 
@@ -48,7 +51,7 @@ const Projects = () => {
 
       <div className='project-page-blurb'>
         <h2>Projects</h2>
-        <h3>Here's a collection of projects I have worked on so far. All code is my own without tutorials.</h3>
+        <h3>Here's a collection of projects I have worked on so far. Click title to view live site.</h3>
       </div>
 
 

@@ -10,6 +10,7 @@
     margin-right: 8%;
     margin-left: 3%;
     margin-bottom: auto;
+
   }
 
   .picture-container {
@@ -63,7 +64,7 @@
     100%{background-position:01% 0%}
 }
 
-@media screen and (max-width: 1330px) {
+@media screen and (max-width: 1270px) {
 
   .profile-container {
     display: flex;
@@ -83,6 +84,7 @@
       p {
         text-align: center;
         font-size: 16px;
+        margin-bottom: 10px;
       }
       h2 {
         text-align: center;
@@ -90,17 +92,41 @@
     }
 
     .picture-container {
+      display: flex;
       align-items: center;
       align-self: center;
       align-content: center;
       justify-content: center;
       margin: auto;
+      width: 100%;
+
 
       img {
-        margin-top: auto;
+        margin-top: 10px;
         width: 100%;
         height: auto;
       }
+    }
+
+  }
+}
+
+@media screen and (max-width: 1654px) {
+  .profile-container {
+
+    .profile-blurb {
+      font-size: 14px;
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 1850px) {
+  .profile-container {
+
+    .profile-blurb {
+      font-size: 18px;
     }
 
   }

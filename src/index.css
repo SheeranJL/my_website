@@ -1,10 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Noto Sans Display', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgba(3, 12, 50);
-  height: auto;
+  margin-top: 4%;
 }
 
 code {

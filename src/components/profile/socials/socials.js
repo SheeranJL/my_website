@@ -8,7 +8,6 @@ const Socials = () => {
     <ul className='socials-container'>
       <a href='https://www.linkedin.com/in/lewissheeran/' className='header-item'>LinkedIn</a>
       <a href='https://github.com/SheeranJL' className='header-item'>Github</a>
-      <a className='header-item'>Resume</a>
     </ul>
   )
 

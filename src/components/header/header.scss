@@ -3,7 +3,7 @@
   list-style: none;
   flex-direction: row;
   justify-content: space-around;
-  margin: 7% 5% 0% 5%;
+  margin: 3% 5% 0% 5%;
 
 
   .initials {
@@ -15,21 +15,30 @@
     text-decoration: none;
 
     &:hover {
-      color: blue;
+      color: yellow;
     }
   }
 
-  .header-item {
-    margin: 5px;
-    color: white;
-    font-size: 20px;
-    margin-right: 4%;
-    text-decoration: none;
-    cursor: pointer;
+  .right-side-header {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    margin-right:3.3%;
+    background-color: rgba(23, 0, 250, 0.2);
 
-    &:hover {
-      color: blue;
-    }
+    .header-item {
+      margin: 5px;
+      color: white;
+      font-size: 20px;
+      margin-right: 4%;
+      text-decoration: none;
+      cursor: pointer;
+
+      &:hover {
+        color: yellow;
+      }
+  }
+
   }
 
 

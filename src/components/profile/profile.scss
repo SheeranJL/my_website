@@ -1,7 +1,9 @@
 .main-profile-div {
 
+  height: 80%;
+
   .bottom-blurb {
-    margin-top: 4%;
+    margin-top: 0%;
     color: white;
     text-align: center;
   }
@@ -22,10 +24,9 @@
   .main-profile-div {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 
   .skills-section {
-    margin-top: 10%;
+    margin-top: 0%;
   }
 }

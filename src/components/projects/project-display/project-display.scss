@@ -9,8 +9,6 @@
   margin-top: 20px;
   margin-bottom: 40px;
 
-
-
   .upper-container {
     display: flex;
     outline: 3px solid rgba(3, 12, 50, 1);
@@ -22,11 +20,17 @@
     justify-content: center;
 
     .project-title {
-      color: green;
       font-weight: bold;
       font-size: 30px;
       text-decoration: none;
+      color: white;;
+      background-color: rgba(0, 0, 0, 0.5);
+
+      &:hover {
+        color: yellow;
+      }
     }
+
   }
 
   .lower-container {
