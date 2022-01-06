@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <div className='app-container'>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Header setToggleModal={setToggleModal} toggle={toggleModal}/>
         <div className='modal-container'>
           <ContactModal toggle={toggleModal}/>
