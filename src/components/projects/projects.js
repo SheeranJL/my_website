@@ -51,7 +51,7 @@ const Projects = () => {
 
       <div className='project-page-blurb'>
         <h2>Projects</h2>
-        <h3>Here's a collection of projects I have worked on so far. Click title to view live site.</h3>
+        <h3>Some projects i've made include those below. Click for live site.</h3>
       </div>
 
 

@@ -42,7 +42,6 @@
 .line {
     background: linear-gradient(0deg, red, blue);
     background-size: 400% 400%;
-
     -webkit-animation: AnimationName 1s ease infinite;
     -moz-animation: AnimationName 1s ease infinite;
     animation: AnimationName 3s ease infinite;
@@ -100,7 +99,6 @@
       margin: auto;
       width: 100%;
 
-
       img {
         margin-top: 10px;
         width: 100%;
@@ -113,22 +111,40 @@
 
 @media screen and (max-width: 1654px) {
   .profile-container {
-
     .profile-blurb {
       font-size: 14px;
     }
-
   }
-
 }
 
 @media screen and (min-width: 1850px) {
   .profile-container {
-
     .profile-blurb {
       font-size: 18px;
     }
-
   }
+}
 
+@media screen and (max-width: 522px) {
+  .profile-container {
+    .picture-container {
+      img {
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1270px) {
+  .profile-container {
+    .profile-blurb {
+      margin-left: 0;
+      margin-right: 0;
+      p {
+        margin-left: 3px;
+        margin-right: 3px;
+      }
+    }
+  }
 }
