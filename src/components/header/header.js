@@ -13,7 +13,7 @@ const Header = ({toggle}) => {
         {
           location.pathname === '/' ? <Link to='/projects' className='header-item'>Projects</Link> : <Link to='/' className='header-item'>Home</Link>
         }
-        <a className='header-item resume' href='https://siasky.net/dAA7ZEDV5wU_T6AuzHnShU4D0K85_C6HD3r90TKs_OU5tg'>Resume</a>
+        <a className='header-item resume' href='https://siasky.net/XAF2bYvogkfrWddm3HjZcBi-BXdo00DnA8fNyXzMAhPA1w'>Resume</a>
       </div>
     </ul>
   )
