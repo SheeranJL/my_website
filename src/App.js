@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {BrowserRouter as Router, Switch, HashRouter, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './app.scss';
 
 //components//
@@ -21,11 +21,12 @@ const App = () => {
           <ContactModal toggle={toggleModal}/>
         </div>
 
-        <HashRouter>
+        <Switch>
           <Route exact path='/' component={Profile} />
           <Route path='/projects' component={Projects} />
           <Route path='/skills' component={Skills} />
-        </HashRouter>
+          <Route component={Profile} />
+        </Switch>
       </Router>
     </div>
   )
