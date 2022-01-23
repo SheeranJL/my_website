@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {HashRouter as Router, Switch, Route} from 'react-router-dom';
 import './app.scss';
 
 //components//
@@ -17,9 +17,7 @@ const App = () => {
     <div className='app-container'>
       <Router basename={process.env.PUBLIC_URL}>
         <Header setToggleModal={setToggleModal} toggle={toggleModal}/>
-        <div className='modal-container'>
-          <ContactModal toggle={toggleModal}/>
-        </div>
+    
 
         <Switch>
           <Route exact path='/' component={Profile} />

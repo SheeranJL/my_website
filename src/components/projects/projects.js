@@ -7,6 +7,12 @@ const Projects = () => {
 
   const projectPlacements = [
     {
+        title: 'Chatroom',
+        link: 'https://sheeranjl.github.io/chatroom-app/',
+        image: 'https://i.ibb.co/85fqzk3/chatroom-app.png',
+        description: "Open chatroom. Leave me a message!"
+    },
+    {
         title: 'NSW Covid Testing Map',
         link: 'https://sheeranjl.github.io/maps-covid-info/',
         image: 'https://i.ibb.co/x8bHWq4/covid-testing.png',
