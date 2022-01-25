@@ -12,9 +12,9 @@ const PictureAndBlurb = () => {
       <div className='line' />
 
       <div className='profile-blurb'>
-        <h2>Hi there, my name is Lewis. Aspiring web-developer.</h2>
-        <p> I have a deep passion for creating websites and web applications. Primarily self-taught with the help of online bootcamps like Treehouse. I love coding and do so often in my spare time. </p>
-        <p> My focus is primarily creating applications and UI's using the React framework but I'm open to other frameworks, or just using vanilla JS; whatever the task requires I will learn & utilise the best tool deemed fit.</p>
+        <h2>Hi there, my name is Lewis.</h2>
+        <p> I love creating websites and web applications. I have a web-development certificate from an online bootcamp called Treehouse but Google has been my primary teacher and mentor for the most part. I love coding and do so often in my spare time (probably too much). </p>
+        <p> My focus has been on creating applications and UI's using the React framework but I'm open to other frameworks, or just using vanilla JS; whatever's required I will thoroughly learn and implement.</p>
         <Socials />
       </div>
 
