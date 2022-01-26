@@ -19,7 +19,7 @@ const PictureAndBlurb = () => {
       </div>
 
       <div className='picture-container'>
-        <img className='profile-image' src={Me} />
+        <img className='profile-image' src={Me} alt='picture of Lewis Sheeran' />
       </div>
 
     </div>
