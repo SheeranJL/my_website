@@ -7,6 +7,12 @@ const Projects = () => {
 
   const projectPlacements = [
     {
+        title: 'Bitcoin Price Dashboard',
+        link: 'https://sheeranjl.github.io/bitcoin_tracker/',
+        image: "https://siasky.net/fAEWZ4Yb4e8cls7IalRmCjFaPbAcbuDzzmX2YlR3so7yMA",
+        description: "Displays live Binance trades, big transfers, and greed/fear index"
+    },
+    {
         title: 'Chatroom',
         link: 'https://sheeranjl.github.io/chatroom-app/',
         image: 'https://i.ibb.co/85fqzk3/chatroom-app.png',
@@ -47,7 +53,7 @@ const Projects = () => {
         link: 'https://sheeranjl.github.io/word-guessing-game/',
         image: "https://i.ibb.co/pzLcrzJ/word-guessing-game.png",
         description: "A simple phrase guessing game."
-    }
+    },
   ]
 
   console.log(projectPlacements);
