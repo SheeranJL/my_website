@@ -1,7 +1,7 @@
 import React from 'react';
 import './project-display.scss';
 
-const ProjectDisplay = ({link, title, description, image}) => {
+const ProjectDisplay = ({link, title, description, image, setDisplayModal}) => {
 
 
   const backgroundImage = {
@@ -12,6 +12,14 @@ const ProjectDisplay = ({link, title, description, image}) => {
     backgroundSize: 'cover',
   }
 
+  const triggerInfoModal = () => {
+    setDisplayModal({
+      link,
+      title,
+      description,
+      image,
+    })
+  }
 
   return (
 
@@ -25,6 +33,10 @@ const ProjectDisplay = ({link, title, description, image}) => {
 
         <div className='lower-container'>
           <p>{description}</p>
+        </div>
+
+        <div className='information-symbol' onClick={() => triggerInfoModal()}>
+          <span>&#x2139;</span>
         </div>
 
     </div>

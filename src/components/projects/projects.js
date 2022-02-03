@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './projects.scss';
 
+//Import components//
 import ProjectDisplay from './project-display/project-display.js';
+import ProjectModal from './project-modal/project-modal.js';
 
 const Projects = () => {
 
@@ -56,24 +58,36 @@ const Projects = () => {
     },
   ]
 
-  console.log(projectPlacements);
+  const [displayModal, setDisplayModal] = useState(null)
 
-  return (
-    <div className='project-page-container'>
+  console.log(displayModal);
 
-      <div className='project-page-blurb'>
-        <h2>Projects</h2>
-        <h3>Some projects i've made include those below. Click for live site.</h3>
+    return (
+
+      <div className='project-page-container'>
+
+        <div className='project-page-blurb'>
+          <h2>Projects</h2>
+          <h3>Some projects i've made include those below. Click for live site.</h3>
+        </div>
+
+        <div className='project-item-container'>
+          { projectPlacements.map((project, index) => <ProjectDisplay title={project.title} link={project.link} description={project.description} image={project.image} setDisplayModal={setDisplayModal}/>) }
+        </div>
+
+        {
+          displayModal
+          ? (
+            <div className='project-modal-container'>
+              <ProjectModal setDisplayModal={setDisplayModal}/>
+            </div>
+          ) : (
+            null
+          )
+
+        }
       </div>
-
-
-      <div className='project-item-container'>
-        { projectPlacements.map((project, index) => <ProjectDisplay title={project.title} link={project.link} description={project.description} image={project.image}/>) }
-      </div>
-
-
-    </div>
-  )
+    )
 
 }
 

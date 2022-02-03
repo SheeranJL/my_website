@@ -3,6 +3,7 @@
   flex-direction: column;
   height: 90%;
   width: 100%;
+  position: relative;
 
   .project-page-blurb {
     color: white;
@@ -23,6 +24,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
+  }
+
+  .project-modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
 }
