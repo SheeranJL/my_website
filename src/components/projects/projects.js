@@ -79,7 +79,7 @@ const Projects = () => {
           displayModal
           ? (
             <div className='project-modal-container'>
-              <ProjectModal setDisplayModal={setDisplayModal}/>
+              <ProjectModal setDisplayModal={setDisplayModal} data={displayModal}/>
             </div>
           ) : (
             null
