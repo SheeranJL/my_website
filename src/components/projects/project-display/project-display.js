@@ -1,8 +1,9 @@
 import React from 'react';
 import './project-display.scss';
 
-const ProjectDisplay = ({link, title, description, image, setDisplayModal}) => {
+const ProjectDisplay = ({link, title, description, image, setDisplayModal, blurb, stack}) => {
 
+  console.log(stack)
 
   const backgroundImage = {
     backgroundImage: `url(${image})`,
@@ -18,6 +19,8 @@ const ProjectDisplay = ({link, title, description, image, setDisplayModal}) => {
       title,
       description,
       image,
+      blurb,
+      stack
     })
   }
 

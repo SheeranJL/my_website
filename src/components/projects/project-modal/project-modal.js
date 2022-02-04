@@ -11,10 +11,42 @@ const ProjectModal = ({setDisplayModal, data}) => {
     <div className='project-modal-inner-container'>
       <span className='close-button' onClick={() => closeModal()}>&#10006;</span>
 
-      <div className='title'>
-        <span>{data.title}</span>
-      </div>
+      <div className='information-container'>
 
+        <div className='title'>
+          <span>{data.title}</span>
+        </div>
+
+        <div className='information'>
+
+          <div className='project-images'>
+            <span className='header-title'>Images</span>
+          </div>
+
+          <div className='project-description'>
+
+            <span className='header-title'>Description</span>
+
+            <div className='modal-blurb'>
+              <span>{data.blurb}</span>
+            </div>
+
+            <span className='header-title'>Stack</span>
+
+            <div className='modal-skills'>
+              {
+                data.stack.map((Icon, index) => <Icon />)
+              }
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+
+      </div>
     </div>
   )
 }
