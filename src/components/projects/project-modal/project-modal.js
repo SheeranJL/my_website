@@ -20,7 +20,7 @@ const ProjectModal = ({setDisplayModal, data}) => {
         <div className='information'>
 
           <div className='project-images'>
-            <span className='header-title'>Images</span>
+            <img src={data.modalImage} />
           </div>
 
           <div className='project-description'>
@@ -31,12 +31,14 @@ const ProjectModal = ({setDisplayModal, data}) => {
               <span>{data.blurb}</span>
             </div>
 
-            <span className='header-title'>Stack</span>
+            <span className='header-skills'>Stack</span>
 
             <div className='modal-skills'>
+
               {
                 data.stack.map((Icon, index) => <Icon />)
               }
+
             </div>
 
 

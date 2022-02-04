@@ -1,7 +1,7 @@
 import React from 'react';
 import './project-display.scss';
 
-const ProjectDisplay = ({link, title, description, image, setDisplayModal, blurb, stack}) => {
+const ProjectDisplay = ({link, title, description, image, setDisplayModal, blurb, stack, modalImage}) => {
 
   console.log(stack)
 
@@ -20,7 +20,8 @@ const ProjectDisplay = ({link, title, description, image, setDisplayModal, blurb
       description,
       image,
       blurb,
-      stack
+      stack,
+      modalImage
     })
   }
 

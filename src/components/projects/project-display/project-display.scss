@@ -78,3 +78,13 @@
   }
 
 }
+
+@media screen and (max-width: 900px) {
+
+  .each-project-container {
+    .information-symbol {
+      display: none;
+    }
+  }
+
+}
