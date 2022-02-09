@@ -44,7 +44,7 @@ const Projects = () => {
         stack: [ReactLogo, Javascript, Sass]
     },
     {
-        title: 'E-Commerse Store',
+        title: 'E-Commerce Store',
         link: 'https://sheeranjl.github.io/ecommerce-store/',
         image: "https://i.ibb.co/YDXV2S5/ecom-store.png",
         modalImage: 'https://siasky.net/_AAlS37cgxP9Ejh4Doi3eBXl9Jw9gWwBE5-ylFg18s-mwQ',
