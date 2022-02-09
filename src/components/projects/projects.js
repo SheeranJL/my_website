@@ -88,6 +88,15 @@ const Projects = () => {
         blurb: 'A simple game which tests a users ability to guess a random phrase within a window of sixty-seconds. Only three lives are afforded and each wrongly selected letter will take one life-heart away. For each letter selected, the game board will prevent the user from selecting that letter again.',
         stack: [ReactLogo, Javascript, Sass]
     },
+    {
+      title: 'Simple Math Quiz',
+      link: 'https://SheeranJL.github.io/math_quiz',
+      image: "https://siasky.net/IAAEDJ9CQQg3Rs5Iwzi2OQagHkuwP19nCBPE8m4I_pl3kQ",
+      modalImage: 'https://siasky.net/IAAEDJ9CQQg3Rs5Iwzi2OQagHkuwP19nCBPE8m4I_pl3kQ',
+      description: "A simple arithmetic quiz",
+      blurb: 'A simple math quiz to train general arithmetic. Players only have sixty seconds to correctly answer as many questions as they can. There are three game modes; easy, medium, and hard. The application will first generate a random question based on the users input for game difficulty. One the page is rendered, the countdown will begin and once expired a "time over" modal will appear. Users may exit the current game and go back to select a new difficulty',
+      stack: [ReactLogo, Javascript, Sass]
+    }
   ]
 
   const [displayModal, setDisplayModal] = useState(null)
