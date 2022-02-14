@@ -18,6 +18,7 @@ const Skills = () => {
         <img className='logo' src='https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg' />
         <img className='logo' src='https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg' />
         <img className='logo' src='https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg' />
+        <img className='logo' src='https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg' />
      </div>
     </div>
   )

@@ -9,8 +9,15 @@
     align-self: center;
     margin-right: 8%;
     margin-left: 3%;
-    margin-bottom: auto;
+    height: auto;
 
+    h2 {
+      margin-top: 5px;
+    }
+
+    p {
+      margin: 10px, 0;
+    }
   }
 
   .picture-container {
