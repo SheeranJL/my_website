@@ -79,6 +79,14 @@
           margin-top: 2%;
           margin-bottom: 2%;
           color: white;
+
+          .link {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            color: yellow;
+            text-decoration: underline;
+            cursor: pointer;
+          }
         }
 
         .header-skills {

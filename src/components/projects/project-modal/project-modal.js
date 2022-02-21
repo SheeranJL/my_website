@@ -5,14 +5,11 @@ const ProjectModal = ({setDisplayModal, data}) => {
 
   const closeModal = () => setDisplayModal(null);
 
-  console.log(data)
-
   return (
     <div className='project-modal-inner-container'>
       <span className='close-button' onClick={() => closeModal()}>&#10006;</span>
 
       <div className='information-container'>
-
         <div className='title'>
           <span>{data.title}</span>
         </div>
@@ -28,26 +25,20 @@ const ProjectModal = ({setDisplayModal, data}) => {
             <span className='header-title'>Description</span>
 
             <div className='modal-blurb'>
-              <span>{data.blurb}</span>
+              <span>{data.blurb}</span><br/><br/>
+              <a className='link' target="_blank" href={data.link}>Live site</a>
             </div>
 
             <span className='header-skills'>Stack</span>
 
             <div className='modal-skills'>
-
               {
-                data.stack.map((Icon, index) => <Icon />)
+                data.stack.map((Icon, index) => <Icon key={index}/>)
               }
-
             </div>
 
-
-
-
           </div>
-
         </div>
-
       </div>
     </div>
   )

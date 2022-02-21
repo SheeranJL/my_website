@@ -17,7 +17,6 @@ const App = () => {
     <div className='app-container'>
       <Router basename={process.env.PUBLIC_URL}>
         <Header setToggleModal={setToggleModal} toggle={toggleModal}/>
-    
 
         <Switch>
           <Route exact path='/' component={Profile} />
@@ -25,6 +24,7 @@ const App = () => {
           <Route path='/skills' component={Skills} />
           <Route component={Profile} />
         </Switch>
+
       </Router>
     </div>
   )

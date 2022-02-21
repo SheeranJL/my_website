@@ -3,8 +3,6 @@ import './project-display.scss';
 
 const ProjectDisplay = ({link, title, description, image, setDisplayModal, blurb, stack, modalImage}) => {
 
-  console.log(stack)
-
   const backgroundImage = {
     backgroundImage: `url(${image})`,
     width: '100%',

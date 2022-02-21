@@ -11,6 +11,7 @@ import {ReactComponent as Sass} from '../../images/sass.svg';
 import {ReactComponent as ReactLogo} from '../../images/react.svg';
 import {ReactComponent as Javascript} from '../../images/javascript.svg';
 import {ReactComponent as Firebase} from '../../images/firebase.svg';
+import {ReactComponent as NodeJS} from '../../images/nodejs.svg';
 
 
 const Projects = () => {
@@ -18,12 +19,12 @@ const Projects = () => {
   const projectPlacements = [
     {
         title: 'Bitcoin Price Dashboard',
-        link: 'https://sheeranjl.github.io/bitcoin_tracker/',
-        image: "https://siasky.net/fAEWZ4Yb4e8cls7IalRmCjFaPbAcbuDzzmX2YlR3so7yMA",
-        modalImage: 'https://siasky.net/XABaapKKsgUREK1Tuq1xxbNRfeCA5IBfU4LECC5XxUvulQ',
+        link: 'https://bitcoindashy.com/',
+        image: "https://siasky.net/3AAGDGjWYitVhxoPDaNO8tRjcP_dhdwYqq00BhDPgLP4Jw",
+        modalImage: 'https://siasky.net/3AAGDGjWYitVhxoPDaNO8tRjcP_dhdwYqq00BhDPgLP4Jw',
         description: "Displays live Binance trades, big transfers, and greed/fear index",
-        blurb: "This application utilises the Binance live-trades websocket and will filter through each trade and display only those which match a certain crieria (over 0.01BTC). I utilised TradingView's live trading widget. The Longs/Shorts furtures data also comes from the Binance API and is fetched every 30 seconds. The greed/fear index is a well known metric to gauge public sentiment - this data is fetched only once on load (as this indicator is updated only once per 24 hour period). Redux has been used for state management.",
-        stack: [ReactLogo, Javascript, Redux, Sass ]
+        blurb: "This dashboard gathers live and recent data from a myriad of different sources. Websockets are used for live trades and liquidations. I made my own API's and Websockets in NodeJS which combines several pieces of information gathered from multiple sources, manipulate that data on the back-end, and served it to my front-end using a single API call - I did this to conserve memory on the browser and avoid rate limiting. My front end uses Redux for state management and my back end is hosted using Heroku.",
+        stack: [ReactLogo, Javascript, Redux, NodeJS, Sass ]
     },
     {
         title: 'Chatroom',
@@ -101,8 +102,6 @@ const Projects = () => {
 
   const [displayModal, setDisplayModal] = useState(null)
 
-  console.log(displayModal);
-
     return (
 
       <div className='project-page-container'>
@@ -113,7 +112,7 @@ const Projects = () => {
         </div>
 
         <div className='project-item-container'>
-          { projectPlacements.map((project, index) => <ProjectDisplay title={project.title} link={project.link} description={project.description} image={project.image} setDisplayModal={setDisplayModal} blurb={project.blurb} stack={project.stack} modalImage={project.modalImage}/>) }
+          { projectPlacements.map((project, index) => <ProjectDisplay key={index} title={project.title} link={project.link} description={project.description} image={project.image} setDisplayModal={setDisplayModal} blurb={project.blurb} stack={project.stack} modalImage={project.modalImage}/>) }
         </div>
 
         {
