@@ -23,8 +23,8 @@ const Projects = () => {
         image: "https://siasky.net/3AAGDGjWYitVhxoPDaNO8tRjcP_dhdwYqq00BhDPgLP4Jw",
         modalImage: 'https://siasky.net/3AAGDGjWYitVhxoPDaNO8tRjcP_dhdwYqq00BhDPgLP4Jw',
         description: "Displays live Binance trades, big transfers, and greed/fear index",
-        blurb: "This dashboard gathers live and recent data from a myriad of different sources. Websockets are used for live trades and liquidations. I made my own API's and Websockets in NodeJS which combines several pieces of information gathered from multiple sources, manipulate that data on the back-end, and served it to my front-end using a single API call - I did this to conserve memory on the browser and avoid rate limiting. My front end uses Redux for state management and my back end is hosted using Heroku.",
-        stack: [ReactLogo, Javascript, Redux, NodeJS, Sass ]
+        blurb: "This dashboard gathers live and recent data from a myriad of different sources. Websockets are used for live trades and liquidations. I made my own API's and Websockets in NodeJS which combines several pieces of information gathered from multiple sources, manipulate that data on the back-end, and served it to my front-end using a single API call - I did this to conserve memory on the browser and avoid rate limiting. My front end uses Redux for state management and my back end is hosted on a private linux VPS on digital ocean.",
+        stack: [ReactLogo, Javascript, Redux, NodeJS, Sass]
     },
     {
         title: 'Chatroom',
