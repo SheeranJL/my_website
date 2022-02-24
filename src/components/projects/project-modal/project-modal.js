@@ -25,7 +25,7 @@ const ProjectModal = ({setDisplayModal, data}) => {
             <span className='header-title'>Description</span>
 
             <div className='modal-blurb'>
-              <span>{data.blurb}</span><br/><br/>
+              <span>{data.blurb}</span><br/>
               <a className='link' target="_blank" href={data.link}>Live site</a>
             </div>
 
