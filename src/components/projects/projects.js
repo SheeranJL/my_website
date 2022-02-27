@@ -5,6 +5,9 @@ import './projects.scss';
 import ProjectDisplay from './project-display/project-display.js';
 import ProjectModal from './project-modal/project-modal.js';
 
+import bitcoindashy from './updated.PNG';
+import mathquiz from './math-quiz.png';
+
 //Import SVG's//
 import {ReactComponent as Redux} from '../../images/redux-logo.svg';
 import {ReactComponent as Sass} from '../../images/sass.svg';
@@ -20,8 +23,8 @@ const Projects = () => {
     {
         title: 'Bitcoin Price Dashboard',
         link: 'https://bitcoindashy.com/',
-        image: "https://siasky.net/3AAGDGjWYitVhxoPDaNO8tRjcP_dhdwYqq00BhDPgLP4Jw",
-        modalImage: 'https://siasky.net/nAHGEmu4d8SMkYuCJiTCi6D6kebGhMMqLB3LbZT6pftbUg',
+        image: bitcoindashy,
+        modalImage: bitcoindashy,
         description: "Displays live Binance trades, big transfers, and greed/fear index",
         blurb: "This dashboard gathers live and recent data from a myriad of different sources. Websockets are used for live trades and liquidations. I made my own API's and Websockets in NodeJS which combines several pieces of information gathered from multiple sources, manipulate that data on the back-end, and served it to my front-end using a single API call - I did this to conserve memory on the browser and avoid rate limiting. My front end uses Redux for state management and my back end is hosted on a private linux VPS on digital ocean.",
         stack: [ReactLogo, Javascript, Redux, NodeJS, Sass]
@@ -92,7 +95,7 @@ const Projects = () => {
     {
       title: 'Simple Math Quiz',
       link: 'https://SheeranJL.github.io/math_quiz',
-      image: "https://siasky.net/IAAEDJ9CQQg3Rs5Iwzi2OQagHkuwP19nCBPE8m4I_pl3kQ",
+      image: mathquiz,
       modalImage: 'https://siasky.net/IAAEDJ9CQQg3Rs5Iwzi2OQagHkuwP19nCBPE8m4I_pl3kQ',
       description: "A simple arithmetic quiz",
       blurb: 'A simple math quiz to train general arithmetic. Players only have sixty seconds to correctly answer as many questions as they can. There are three game modes; easy, medium, and hard. The application will first generate a random question based on the users input for game difficulty. One the page is rendered, the countdown will begin and once expired a "time over" modal will appear. Users may exit the current game and go back to select a new difficulty',
