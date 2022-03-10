@@ -26,7 +26,7 @@ const Projects = () => {
         image: bitcoindashy,
         modalImage: bitcoindashy,
         description: "Displays live Binance trades, big transfers, and greed/fear index",
-        blurb: "This dashboard gathers live and recent data from a myriad of different sources. Websockets are used for live trades and liquidations. I made my own API's and Websockets in NodeJS which combines several pieces of information gathered from multiple sources, manipulate that data on the back-end, and served it to my front-end using a single API call - I did this to conserve memory on the browser and avoid rate limiting. My front end uses Redux for state management and my back end is hosted on a private linux VPS on digital ocean.",
+        blurb: "This dashboard gathers live and recent data from a myriad of different sources. Websockets are used for live trades and liquidations and in-built chat; all hard-coded. I made my own API's and Websockets in NodeJS which combines several pieces of information gathered from multiple sources, manipulated that data on the back-end, and served it to front-end clients using a single API/Websocket call - I did this to conserve memory on the browser and avoid rate limiting. My front end uses Redux for state management and my back end is hosted on a private linux VPS on digital ocean. This site attracts 20-50 visitors daily.",
         stack: [ReactLogo, Javascript, Redux, NodeJS, Sass]
     },
     {
