@@ -109,26 +109,11 @@ const Projects = () => {
   ]
 
 
-
-
-  function obtainLocations() {
-    fetch('http://ip-api.com/batch', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(test)
-    })
-      // .then(res => console.log(res.json()))
-      .then(res => res.json())
-      .then(data => setActiveUsers(data.length))
-  }
-
-
-
   useEffect(() => {
     fetch('https://cryptodashy.com/activeUsers')
       .then(res => res.json()).then(data => {
-        const users = data.forEach(item => test.push(item.substr(7, item.length)))
-        obtainLocations()
+        console.log(data)
+        setActiveUsers(data.length)
       })
   }, [])
 
