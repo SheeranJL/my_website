@@ -1,7 +1,9 @@
 import React from 'react';
 import './project-display.scss';
 
-const ProjectDisplay = ({link, title, description, image, setDisplayModal, blurb, stack, modalImage}) => {
+const ProjectDisplay = ({link, title, description, image, setDisplayModal, blurb, stack, modalImage, activeUsers}) => {
+
+  console.log(activeUsers)
 
   const backgroundImage = {
     backgroundImage: `url(${image})`,
@@ -39,6 +41,14 @@ const ProjectDisplay = ({link, title, description, image, setDisplayModal, blurb
 
         <div className='information-symbol' onClick={() => triggerInfoModal()}>
           <span>&#x2139;</span>
+        </div>
+
+        <div className='active-users'>
+          {
+            activeUsers
+            ? <span>{activeUsers} current visitors</span>
+            : null
+          }
         </div>
 
     </div>

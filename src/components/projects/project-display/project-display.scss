@@ -77,6 +77,16 @@
     }
   }
 
+  .active-users {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: lime;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: black;
+  }
 }
 
 @media screen and (max-width: 900px) {

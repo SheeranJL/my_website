@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './projects.scss';
 
 //Import components//
@@ -19,6 +19,10 @@ import {ReactComponent as NodeJS} from '../../images/nodejs.svg';
 
 const Projects = () => {
 
+  const [displayModal, setDisplayModal] = useState(null)
+  const [activeUsers, setActiveUsers] = useState(null);
+  const test = [];
+
   const projectPlacements = [
     {
         title: 'Bitcoin Price Dashboard',
@@ -27,7 +31,8 @@ const Projects = () => {
         modalImage: bitcoindashy,
         description: "Displays live Binance trades, big transfers, and greed/fear index",
         blurb: "This dashboard gathers live and recent data from a myriad of different sources. Websockets are used for live trades and liquidations and in-built chat; all hard-coded. I made my own API's and Websockets in NodeJS which combines several pieces of information gathered from multiple sources, manipulated that data on the back-end, and served it to front-end clients using a single API/Websocket call - I did this to conserve memory on the browser and avoid rate limiting. My front end uses Redux for state management and my back end is hosted on a private linux VPS on digital ocean. This site attracts 20-50 visitors daily.",
-        stack: [ReactLogo, Javascript, Redux, NodeJS, Sass]
+        stack: [ReactLogo, Javascript, Redux, NodeJS, Sass],
+        onlineUsers: activeUsers
     },
     {
         title: 'Chatroom',
@@ -103,7 +108,34 @@ const Projects = () => {
     }
   ]
 
-  const [displayModal, setDisplayModal] = useState(null)
+
+
+
+  function obtainLocations() {
+    fetch('http://ip-api.com/batch', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(test)
+    })
+      // .then(res => console.log(res.json()))
+      .then(res => res.json())
+      .then(data => setActiveUsers(data.length))
+  }
+
+
+
+  useEffect(() => {
+    fetch('https://cryptodashy.com/activeUsers')
+      .then(res => res.json()).then(data => {
+        const users = data.forEach(item => test.push(item.substr(7, item.length)))
+        obtainLocations()
+      })
+  }, [])
+
+
+
+
+
 
     return (
 
@@ -115,7 +147,7 @@ const Projects = () => {
         </div>
 
         <div className='project-item-container'>
-          { projectPlacements.map((project, index) => <ProjectDisplay key={index} title={project.title} link={project.link} description={project.description} image={project.image} setDisplayModal={setDisplayModal} blurb={project.blurb} stack={project.stack} modalImage={project.modalImage}/>) }
+          { projectPlacements.map((project, index) => <ProjectDisplay key={index} title={project.title} link={project.link} description={project.description} image={project.image} activeUsers={project.onlineUsers} setDisplayModal={setDisplayModal} blurb={project.blurb} stack={project.stack} modalImage={project.modalImage}/>) }
         </div>
 
         {
