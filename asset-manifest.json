@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/static/css/main.8b1a4934.css",
-    "main.js": "/static/js/main.e22e2c49.js",
+    "main.js": "/static/js/main.236b0490.js",
     "static/js/787.346528c1.chunk.js": "/static/js/787.346528c1.chunk.js",
     "static/media/updated.PNG": "/static/media/updated.389f289fcced72eab127.PNG",
     "static/media/myself.jpg": "/static/media/myself.bc501e23a4e704268356.jpg",
     "static/media/math-quiz.png": "/static/media/math-quiz.41afdef29833ad1fc91e.png",
-    "static/media/react-logo.svg": "/static/media/react-logo.ae62622598f39552abdcdb023e554c6f.svg",
-    "static/media/nodejs.svg": "/static/media/nodejs.299000a005222ab04452574add2d470f.svg",
-    "static/media/redux-logo.svg": "/static/media/redux-logo.e55435f4ecc6ffd186eb1447e74134ba.svg",
+    "static/media/react-logo.svg": "/static/media/react-logo.a44bcd74fef6a7a4d3742bbaa4914629.svg",
+    "static/media/nodejs.svg": "/static/media/nodejs.c641f648f052502a74e06741f2203190.svg",
+    "static/media/redux-logo.svg": "/static/media/redux-logo.8a2648b7d1ecd64475c36f54d80f2968.svg",
     "static/media/sass.svg": "/static/media/sass.8aa78a8393470431c8036541f0708bd7.svg",
     "static/media/react.svg": "/static/media/react.e68b35f4774979ae220b1d5d7b345b00.svg",
     "index.html": "/index.html",
-    "static/media/javascript.svg": "/static/media/javascript.8546f2a9d0edd331039ccf52d27196eb.svg",
+    "static/media/javascript.svg": "/static/media/javascript.38827a799911cd479691204412363955.svg",
     "static/media/firebase.svg": "/static/media/firebase.82a35fc0b90d124a8e7333989f767fd3.svg",
     "main.8b1a4934.css.map": "/static/css/main.8b1a4934.css.map",
-    "main.e22e2c49.js.map": "/static/js/main.e22e2c49.js.map",
+    "main.236b0490.js.map": "/static/js/main.236b0490.js.map",
     "787.346528c1.chunk.js.map": "/static/js/787.346528c1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8b1a4934.css",
-    "static/js/main.e22e2c49.js"
+    "static/js/main.236b0490.js"
   ]
 }
