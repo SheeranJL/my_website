@@ -18,14 +18,6 @@ const Profile = () => {
       <Skills />
       </div>
 
-      <div className='bottom-blurb'>
-        <h3>I look forward to helping you on your next project.</h3>
-        <h4>Get in touch!</h4>
-        <p className='contact-info'>lewisjsheeran@protonmail.com | 0450 700 182</p>
-      </div>
-
-
-
     </div>
 
   )
